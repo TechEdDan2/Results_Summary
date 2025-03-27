@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/TechEdDan2/Results_Summary)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/TechEdDan2/Results_Summary)
+- Live Site URL: [Live site URL here](https://techeddan2.github.io/Results_Summary/)
 
 ## My process
 
@@ -60,4 +60,4 @@ I started to set up using JS to fetch the data from the json file. I was able to
 - Frontend Mentor - [@TechEdDan2](https://www.frontendmentor.io/profile/TechEdDan2)
 
 ## Acknowledgments
-The YouTubers and other educational resources I have been learning from include: Coder Coder (Jessica Chan), BringYourOwnLaptop (Daniel Walter Scott), MDN, CSS-Tricks.  
+The YouTubers and other educational resources I have been learning from include: Coder Coder (Jessica Chan), BringYourOwnLaptop (Daniel Walter Scott), MDN, CSS-Tricks, Colt Steele,  .  
