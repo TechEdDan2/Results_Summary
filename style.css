@@ -1,0 +1,208 @@
+:root {
+    --prime_Light_red: hsl(0, 100%, 67%);
+    --prime_Orangey_yellow: hsl(39, 100%, 56%);
+    --prime_Green_teal: hsl(166, 100%, 37%);
+    --prime_Cobalt_blue: hsl(234, 85%, 45%);
+    --bg_gradi_Light_slate_blue: hsl(252, 100%, 67%);
+    --bg_gradi_Light_royal_blue: hsl(241, 81%, 54%);
+    --cir_gradi_Violet_blue: hsla(256, 72%, 46%, 1);
+    --cir_gradi_Persian_blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+.hanken-grotesk-bold {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800; /* Bold */
+    font-style: normal;
+  }
+
+  .hanken-grotesk-mid {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Mid weight */
+    font-style: normal;
+  }
+  
+  .hanken-grotesk-light {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Light */
+    font-style: normal;
+  }
+
+/* Mobile First */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--Pale_blue);
+}
+
+main {
+    width: 375px;
+    background-color: var(--White);
+    width: 100%;
+    border-radius: 1.25rem;
+    box-shadow: 1px 1px 20px var(--Light_lavender);
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    border-radius: 0 0 1.25rem 1.25rem;
+    background: linear-gradient(135deg, var(--bg_gradi_Light_slate_blue), var(--bg_gradi_Light_royal_blue));
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    color: var(--Light_lavender);
+    text-align: center;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cir_gradi_Violet_blue), var(--cir_gradi_Persian_blue));
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+h1{
+    font-size: 3.75rem;
+    margin-bottom: -1rem;
+}
+
+h1, h2{
+    color: var(--White)
+}
+
+h2{
+    margin-bottom: 0.85rem;
+}
+
+.summary{
+    padding: 1.25rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.data_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 0.75rem;
+}
+
+.left_text{
+    display: flex;
+}
+
+.left_text img{
+    margin-right: 1rem;
+}
+
+.data_box p{
+    color: hsla(224, 30%, 27%, 0.482);
+}
+
+#react{
+    background-color: hsla(0, 100%, 67%, 0.155);
+}
+
+#reaction_text{
+    color: var(--prime_Light_red);
+}
+
+#mem{
+    background-color: hsla(39, 100%, 56%, 0.155);
+}
+
+#memory_text{
+    color: var(--prime_Orangey_yellow);
+}
+
+#verb{
+    background-color:hsl(166, 100%, 37%, 0.155);
+}
+
+#verbal_text{
+    color: var(--prime_Green_teal);
+}
+
+#vis{
+    background-color: hsla(234, 85%, 45%, 0.155);
+}
+
+#visual_text{
+    color: var(--prime_Cobalt_blue);
+}
+
+.bold_num{
+    color: var(--Dark_gray_blue);
+    font-weight: 800;
+}
+
+button{
+    padding: 0.75rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--Dark_gray_blue);
+    color: var(--Pale_blue);
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+button:hover{
+    background: linear-gradient(var(--cir_gradi_Violet_blue) 90%, var(--cir_gradi_Persian_blue));
+    transition: 1s;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Desktop */
+@media(min-width: 768px) {
+    body{
+        align-items: center;
+    }
+    
+    main {
+        display: flex;
+        width: 625px;
+    }
+
+    .summary{
+        flex: 1;
+    }
+
+    .results{
+        flex: 1;
+        border-radius: 1.25rem;
+    }
+}
